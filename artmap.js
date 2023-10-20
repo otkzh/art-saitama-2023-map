@@ -38,9 +38,9 @@ const geojson =
         map.addControl(geolocate);
 
         // 必要に応じて、初期表示時に現在位置ボタンをクリックさせる（ユーザーの許可が必要）
-        geolocate.trigger();
+        // geolocate.trigger();
         // 地図がロードされた後に現在位置に移動
-        // moveToCurrentLocation();
+        moveToCurrentLocation();
         // Fetch GeoJSON file
         fetch('mapdata.js')
             .then(response => response.json())
