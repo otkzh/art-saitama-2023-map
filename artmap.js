@@ -42,7 +42,7 @@ const geojson =
         // 地図がロードされた後に現在位置に移動
         moveToCurrentLocation();
         // Fetch GeoJSON file
-        fetch('mapdata.js')
+        fetch('mapdata.json')
             .then(response => response.json())
             .then(data => {
                 // Loop through each feature in the GeoJSON and create a marker
